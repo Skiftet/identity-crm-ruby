@@ -56,3 +56,29 @@ Some resources can also be requested with alternative parameters
 ```rb
 @client.members.get(params: { email: 'test@example.com' })
 ```
+
+### POST requests
+
+Resources are created in the API by calling the `#create` method with the body passed through `params` key.
+
+#### Creating a single resource
+
+```rb
+@client.members.create(params: {
+  email: 'test@example.com',
+  first_name: 'Yoelo',
+  last_name: 'Svenslol',
+})
+```
+
+
+### Request options
+
+The `options` hash can be passed with options for the request. Currently supported settings are: `timeout`.
+
+```rb
+@client.members.get(
+  params: { guid: 'abc123' },
+  options: { timeout: 0.5 }
+)
+```
