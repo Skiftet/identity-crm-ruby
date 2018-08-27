@@ -44,7 +44,7 @@ To request a single resource, use the `#get` method:
 A call to `get` returns an instance of the resource:
 
 ```rb
-p @client.members.get(member_id).first_name
+@client.members.get(member_id).first_name
 ```
 
 Some resources can also be requested with alternative parameters
