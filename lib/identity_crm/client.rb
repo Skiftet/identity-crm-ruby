@@ -22,4 +22,5 @@ class IdentityCRM::Client
   resource 'donations'
   resource 'regular_donations'
   resource 'members'
+  resource 'actions'
 end
